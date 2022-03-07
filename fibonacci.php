@@ -1,14 +1,13 @@
 <?php
 function fibonacci($position){
-    if ($position<2 && $position >=0){
+    if ($position<2 && $position>=0){
         return $position;
     }else{
-        if(is_numeric($position) && $position >=0){
-            return fibonacci($position-1) + fibonacci($position -2);
+        if(is_numeric($position) && $position>=0){
+            return fibonacci($position-1) + fibonacci($position-2);
         }else{
             return 'Not support!';
         }
-        
     }
 }
 
