@@ -63,11 +63,14 @@ class linkedList
 
 $stack = new linkedList();
 $stack->printList(); // empty
+
 $stack->push(1);
 $stack->push(2);
 $stack->push(3);
 $stack->printList(); // 3 2 1
 echo $stack->size() . "\n"; // 3
+
+
 $stack->pop(); // 3 
-echo $stack->size() . "\n"; // 2 
-$stack->printList();// 2 1
+$stack->printList(); // 2 1
+echo $stack->size() . "\n"; // 2
