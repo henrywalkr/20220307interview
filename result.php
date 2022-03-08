@@ -40,3 +40,14 @@ foreach ($userData as $userId => $userName) {
         ];
     }
 }
+
+print_r($result);
+/*$result = [
+    'user' => ['id' => 'U01', 'name' => 'Tom'],
+    'orders' => [
+        ['id' => 'T01', 'name' => 'A', 'price' => 499],
+        ['id' => 'T02', 'name' => 'B', 'price' => 599],
+    ],
+];
+*/
+
