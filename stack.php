@@ -27,8 +27,10 @@ class linkedList
     {
         if ($this->head != null) {
             $temp = $this->head;
+            $popReturn = $temp->number;
             $this->head = $this->head->next;
             $temp = null;
+            echo 'pop number:' . $popReturn . "\n";
         }
     }
 
@@ -74,3 +76,10 @@ echo $stack->size() . "\n"; // 3
 $stack->pop(); // 3 
 $stack->printList(); // 2 1
 echo $stack->size() . "\n"; // 2
+
+$stack->push(5);
+$stack->push(6);
+$stack->printList(); // 6 5 2 1
+echo $stack->size() . "\n"; // 4
+$stack->pop();
+$stack->printList(); // 5 2 1
